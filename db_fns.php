@@ -28,7 +28,7 @@
 
 
 
-	function get_products($category)
+	function GetProducts($category)
 	{
 		db_connect();
 		$query="SELECT * FROM ".$category." ORDER BY id ASC";
@@ -41,7 +41,7 @@
 
 	
 	
-	function get_prod($category,$id)
+	function GetSingleProduct($category,$id)
 	{
 		db_connect();
 

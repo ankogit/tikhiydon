@@ -1,6 +1,6 @@
 <?php
-include('db_fns.php'); //ïîäêëþ÷åíèå ôàéëà ñ ôóíêöèÿìè
-db_connect(); //ïîäêëþ÷åíèå ê áä
+include('db_fns.php'); //Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ð° Ñ Ñ„ÑƒÐ½ÐºÑ†Ð¸ÑÐ¼Ð¸
+db_connect(); //Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ Ðº Ð±Ð´
 
  if (!empty($module) && empty($Param['id'])) {
 
@@ -9,20 +9,20 @@ db_connect(); //ïîäêëþ÷åíèå ê áä
 $products_for_module=GetProducts($module);
 
 foreach ($products_for_module as $single_product):
-  echo $single_product['title']; //íàçâàíèå
-  echo $single_product['description']; //îïèñàíèå
- /* echo $single_product['color_1']; //ïåðâûé öâåò òîâàðà
-  if (!empty($single_product['color_2'])) echo $single_product['color_2'];//âòîðîé öâåò(åñëè åñòü)
-  if (!empty($single_product['color_3'])) echo $single_product['color_3'];//òðåòèé öâåò(åñëè åñòü)
-  echo $single_product['material']; //ìàòåðèàë, èç êîòîðîãî ñäåëàí òîâàð
-  echo $single_product['c1_img1']; //ññûëêà íà Öâåò1 Êàðòèíêà1. Âèä ññûëêè : 'images/shkaf10/c1_img1.jpg'
-  echo $single_product['c1_img2']; //ññûëêà íà Öâåò1 Êàðòèíêà2
+  echo $single_product['title']; //Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ
+  echo $single_product['description']; //Ð¾Ð¿Ð¸ÑÐ°Ð½Ð¸Ðµ
+ /* echo $single_product['color_1']; //Ð¿ÐµÑ€Ð²Ñ‹Ð¹ Ñ†Ð²ÐµÑ‚ Ñ‚Ð¾Ð²Ð°Ñ€Ð°
+  if (!empty($single_product['color_2'])) echo $single_product['color_2'];//Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ Ñ†Ð²ÐµÑ‚(ÐµÑÐ»Ð¸ ÐµÑÑ‚ÑŒ)
+  if (!empty($single_product['color_3'])) echo $single_product['color_3'];//Ñ‚Ñ€ÐµÑ‚Ð¸Ð¹ Ñ†Ð²ÐµÑ‚(ÐµÑÐ»Ð¸ ÐµÑÑ‚ÑŒ)
+  echo $single_product['material']; //Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð», Ð¸Ð· ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ ÑÐ´ÐµÐ»Ð°Ð½ Ñ‚Ð¾Ð²Ð°Ñ€
+  echo $single_product['c1_img1']; //ÑÑÑ‹Ð»ÐºÐ° Ð½Ð° Ð¦Ð²ÐµÑ‚1 ÐšÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ°1. Ð’Ð¸Ð´ ÑÑÑ‹Ð»ÐºÐ¸ : 'images/shkaf10/c1_img1.jpg'
+  echo $single_product['c1_img2']; //ÑÑÑ‹Ð»ÐºÐ° Ð½Ð° Ð¦Ð²ÐµÑ‚1 ÐšÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ°2
   if (!empty($single_product['c2_img1'])) echo $single_product['c2_img1];
   if (!empty($single_product['c2_img2'])) echo $single_product['c2_img2'];
   if (!empty($single_product['c3_img1'])) echo $single_product['c3_img1'];
   if (!empty($single_product['c3_img2'])) echo $single_product['c3_img2'];
   
-  //ññûëêè íà ÷åðòåæè âèäà : 'images/shkaf10/drawing_1.jpg'
+  //ÑÑÑ‹Ð»ÐºÐ¸ Ð½Ð° Ñ‡ÐµÑ€Ñ‚ÐµÐ¶Ð¸ Ð²Ð¸Ð´Ð° : 'images/shkaf10/drawing_1.jpg'
   for ($i=1;$i<=15;$i++){
   $drawing='drawing_'.$i;
   if (!empty($single_product[$drawing])) echo $single_product[$drawing];
@@ -40,20 +40,20 @@ endforeach;
  $single_product=GetSingleProduct($module,$Param);
  
  foreach ($products_for_module as $single_product):
-  echo $single_product['title']; //íàçâàíèå
-  echo $single_product['description']; //îïèñàíèå
-  echo $single_product['color_1']; //ïåðâûé öâåò òîâàðà
-  if (!empty($single_product['color_2'])) echo $single_product['color_2'];//âòîðîé öâåò(åñëè åñòü)
-  if (!empty($single_product['color_3'])) echo $single_product['color_3'];//òðåòèé öâåò(åñëè åñòü)
-  echo $single_product['material']; //ìàòåðèàë, èç êîòîðîãî ñäåëàí òîâàð
-  echo $single_product['c1_img1']; //ññûëêà íà Öâåò1 Êàðòèíêà1. Âèä ññûëêè : 'images/shkaf10/c1_img1.jpg'
-  echo $single_product['c1_img2']; //ññûëêà íà Öâåò1 Êàðòèíêà2
+  echo $single_product['title']; //Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ
+  echo $single_product['description']; //Ð¾Ð¿Ð¸ÑÐ°Ð½Ð¸Ðµ
+  echo $single_product['color_1']; //Ð¿ÐµÑ€Ð²Ñ‹Ð¹ Ñ†Ð²ÐµÑ‚ Ñ‚Ð¾Ð²Ð°Ñ€Ð°
+  if (!empty($single_product['color_2'])) echo $single_product['color_2'];//Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ Ñ†Ð²ÐµÑ‚(ÐµÑÐ»Ð¸ ÐµÑÑ‚ÑŒ)
+  if (!empty($single_product['color_3'])) echo $single_product['color_3'];//Ñ‚Ñ€ÐµÑ‚Ð¸Ð¹ Ñ†Ð²ÐµÑ‚(ÐµÑÐ»Ð¸ ÐµÑÑ‚ÑŒ)
+  echo $single_product['material']; //Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð», Ð¸Ð· ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ ÑÐ´ÐµÐ»Ð°Ð½ Ñ‚Ð¾Ð²Ð°Ñ€
+  echo $single_product['c1_img1']; //ÑÑÑ‹Ð»ÐºÐ° Ð½Ð° Ð¦Ð²ÐµÑ‚1 ÐšÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ°1. Ð’Ð¸Ð´ ÑÑÑ‹Ð»ÐºÐ¸ : 'images/shkaf10/c1_img1.jpg'
+  echo $single_product['c1_img2']; //ÑÑÑ‹Ð»ÐºÐ° Ð½Ð° Ð¦Ð²ÐµÑ‚1 ÐšÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ°2
   if (!empty($single_product['c2_img1'])) echo $single_product['c2_img1'];
   if (!empty($single_product['c2_img2'])) echo $single_product['c2_img2'];
   if (!empty($single_product['c3_img1'])) echo $single_product['c3_img1'];
   if (!empty($single_product['c3_img2'])) echo $single_product['c3_img2'];
   
-  //ññûëêè íà ÷åðòåæè âèäà : 'images/shkaf10/drawing_1.jpg'
+  //ÑÑÑ‹Ð»ÐºÐ¸ Ð½Ð° Ñ‡ÐµÑ€Ñ‚ÐµÐ¶Ð¸ Ð²Ð¸Ð´Ð° : 'images/shkaf10/drawing_1.jpg'
   for ($i=1;$i<=15;$i++){
   $drawing='drawing_'.$i;
   if (!empty($single_product[$drawing])) echo $single_product[$drawing];

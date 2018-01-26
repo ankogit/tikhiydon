@@ -1,9 +1,9 @@
 <?php
 	function db_connect()
 {
-	$host='';
-	$db = '';
-	$user='';
+	$host='localhost';
+	$db = 'es';
+	$user='root';
 	$pswd='';
 	
 	$connection=mysql_connect($host, $user, $pswd);
@@ -53,6 +53,16 @@
 		
 		return $row;
 
+	}
+	
+	function GetAllProducts() {
+		$Categories =  array("angular","bedrooms","cabinets","chair_bed","children_sofas","children_room","hallways","journal_table","living_rooms","modular_sofas", "office_furniture", "cabinets_victory","small_sized","sofas_beds","tv_curbstones");
+		$Arr=array();
+		for ($i=0; $i<count($Categories); $i++) {
+			
+			$Arr+=GetProducts($Categories[$i]);
+		}
+		return $Arr;
 	}
 
 

@@ -2,7 +2,15 @@
 include('db_fns.php'); //подключение файла с функциями
 db_connect(); //подключение к бд
 
- if (!empty($module) && empty($Param['id'])) {
+if (empty($module)) {
+	$All_products=GetAllProducts();
+	foreach ($All_products as $single_product):
+  echo $single_product['title']; //название
+  echo $single_product['description']; //описание
+	endforeach;
+}
+
+ else if (!empty($module) && empty($Param['id'])) {
 
 
 

@@ -1,6 +1,4 @@
 <?
-
-
 require 'config.php';
 
 if ( $_SERVER['REQUEST_URI'] == '/') {

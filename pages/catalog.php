@@ -37,9 +37,7 @@ endforeach;
  
  else if(!empty($module) && !empty($Param['id'])) {
  $id=$Param['id'];
- $single_product=GetSingleProduct($module,$Param);
- 
- foreach ($products_for_module as $single_product):
+ $single_product=GetSingleProduct($module,$id);
   echo $single_product['title']; //название
   echo $single_product['description']; //описание
   echo $single_product['color_1']; //первый цвет товара
@@ -60,6 +58,5 @@ endforeach;
   }
   
   
-endforeach;
  }
 ?>

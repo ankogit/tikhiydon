@@ -1,8 +1,24 @@
 <?php top('Главная');?>
 
-    <section class="slider">
-        slider
-    </section>
+    <section class="place_for_slider">
+       
+	<div id="slider">
+		<div id="Banner4" class="single_slide" ><img src="http://ufgel.ru/images/Banner4.png"></div>
+ 		<div id="Banner1" class="single_slide" ><img src="http://ufgel.ru/images/Banner3.png"></div>
+ 		<div id="Banner2" class="single_slide" ><img src="http://ufgel.ru/images/Banner2.png"></div>
+ 		<div id="Banner3" class="single_slide" ><img src="http://ufgel.ru/images/Banner1.png"></div>
+
+	</div>
+
+
+    <ul id="nab">
+      <li class="navpred"><a style="position:absolute; left:1%; top:40%;"><img class="str" src="http://ufgel.ru/images/left.png"> </a> </li>
+      <li class="navposl"><a style="position:absolute; right:1%; top:40%;"><img class="str" src="http://ufgel.ru/images/right.png"> </a> </li>
+    </ul>
+  
+<div class="navigation"></div>
+
+	</section>
 
     <section class="menu">
         <div class="container">

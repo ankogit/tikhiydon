@@ -159,6 +159,7 @@ echo '
     <script src="https://use.fontawesome.com/c40b7447b3.js"></script>
     <script src="assets/libs/modernizr/modernizr.js"></script>
 
+
 </head>
 
 <body>
@@ -270,6 +271,7 @@ echo '
     <script src="assets/libs/plugins-scroll/plugins-scroll.js"></script>
     
     <script src="assets/js/common.js"></script>
+	<script src="assets/js/myslider.js"></script>
     
 </body>
 </html>';

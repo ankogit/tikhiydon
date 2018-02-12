@@ -152,9 +152,11 @@ echo '
     <link rel="stylesheet" href="assets/libs/animate/animate.css">
     
     <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/media.css">
 
+    <script src="https://use.fontawesome.com/c40b7447b3.js"></script>
     <script src="assets/libs/modernizr/modernizr.js"></script>
 
 </head>
@@ -162,27 +164,22 @@ echo '
 <body>
 
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    
-                </div>
+        <div class="headline">
+            <div class="container-fluid">
+                <p><i class="fa fa-phone"></i> Офис: +7 (8634) 380-381 , +7 (8634) 64-79-26 <i class="fa fa-envelope"></i> qweqwe@list.ru <i class="fa fa-map-marker"></i> г. Таганрог, шс. Поляковское, 49</p>
             </div>
+        </div>
+        <div class="header_menu">
+            
+            <ul id="top_menu">
+                <div id="logo_top_menu"><img src="/assets/img/test.jpg" alt="logo"></div>
+                <a href=""><li>Home</li></a>
+                <a href=""><li>Gallery</li></a>
+                <a href=""><li>About</li></a>
+                <a href=""><li>Contact</li></a>
+            </ul>
         </div>
     </header>
-
-    <section class="menu">
-        <div class="container">
-            <div class="row">
-                <div class="line_menu">
-                    <a href="">Home</a>
-                    <a href="">Gallery</a>
-                    <a href="">About</a>
-                    <a href="">Contact</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <section class="main">
 ';
@@ -196,10 +193,59 @@ echo '
     </section>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    
+        <div class="footer_content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-3">
+                        <div class="footer_logo"></div>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam laboriosam necessitatibus, sed quasi? Perspiciatis illo, nemo cum nisi illum accusantium aperiam quo dolorum, ducimus in, officia corrupti quasi qui optio!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam laboriosam necessitatibus, sed quasi? Perspiciatis illo, nemo cum nisi illum accusantium aperiam quo dolorum, ducimus in, officia corrupti quasi qui optio!
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <h3 class="red">Основное</h3>
+                        <ul class="lists">
+                            <li class="arrow_red"><a href="/">Главная</a></li>
+                            <li class="arrow_red"><a href="/">Товары</a></li>
+                            <li class="arrow_red"><a href="/">Заказать</a></li>
+                            <li class="arrow_red"><a href="/">Заказать</a></li>
+                            <li class="arrow_red"><a href="/">Блог</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <h3 class="red">Товары</h3>
+                        <ul class="lists">
+                            <li class="arrow_red"><a href="/">Все</a></li>
+                            <li class="arrow_red"><a href="/">Категории</a></li>
+                            <li class="arrow_red"><a href="/">Поиск</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <h3 class="red">Связь</h3>
+                        <ul class="lists">
+                            <li class="arrow_red"><a href="/contact">Обратная связь</a></li>
+                            <li class="arrow_red"><a href="/reviews">Отзывы</a></li>
+                            <li class="arrow_red"><a href="/ad">Кто мы?</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_line">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        © 2018 asdasd Coffee anko.
+                    </div>
+                    <div class="col-md-6">
+                        <a href="">Главная</a>
+                        <a href="">Главная</a>
+                        <a href="">Главная</a>
+                        <a href="">Главная</a>
+                    </div>
                 </div>
             </div>
         </div>
